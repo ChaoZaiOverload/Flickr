@@ -9,15 +9,15 @@
 import Foundation
 
 
-class ImageManager {
-    static let shared = ImageManager()
+class FlickerManager {
+    static let shared = FlickerManager()
     private let baseUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=3e7cc266ae2b0e0d78e279ce8e361736&format=json&nojsoncallback=1"
     
     func requestImages(keyword: String, completion: @escaping (([URL]?, Error?)->Void)) {
         guard let url = URL(string: baseUrl+"&text=\(keyword)") else {
             return
         }
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
             var urls: [URL]?, err: Error? = error
             defer {
                 DispatchQueue.main.async {
