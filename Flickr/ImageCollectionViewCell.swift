@@ -8,16 +8,20 @@
 
 import Foundation
 import UIKit
-import SDWebImage
+
 
 final class ImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet private var imageView: UIImageView!
     
+    var imageLoader: ImageViewLoader = ImageLoader.shared
+    
     func configure(_ url: URL?) {
-        imageView.sd_setImage(with: url)
+        if let url = url {
+            imageLoader.loadImage(with: url, imageView: imageView)
+        }
     }
     
     override func prepareForReuse() {
-        imageView.sd_cancelCurrentImageLoad()
+        imageLoader.cancelLoading(for: imageView)
     }
 }

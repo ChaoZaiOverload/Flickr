@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private let imageManager = ImageManager.shared
+    private let flickerManager = FlickerManager.shared
     @IBOutlet private var collectionView: UICollectionView!
     
     fileprivate var urls: [URL] = []
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        imageManager.requestImages(keyword: searchText) { [weak self] (urls, error) in
+        flickerManager.requestImages(keyword: searchText) { [weak self] (urls, error) in
             guard let this = self else { return }
             guard let urls = urls, nil == error else { return }
             this.urls = urls
