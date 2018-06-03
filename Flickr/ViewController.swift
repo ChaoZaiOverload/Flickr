@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     private let flickerManager = FlickerManager.shared
     @IBOutlet private var collectionView: UICollectionView!
-    
+    @IBOutlet fileprivate var searchBar: UISearchBar!
     fileprivate var urls: [URL] = []
     
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        flickerManager.requestImages(keyword: searchText) { [weak self] (urls, error) in
+        flickerManager.requestImages(keyword: searchText, resetPage: true) { [weak self] (urls, error) in
             guard let this = self else { return }
             guard let urls = urls, nil == error else { return }
             this.urls = urls
@@ -65,6 +65,17 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         let spacing = (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.minimumInteritemSpacing ?? 10
         let width = (collectionView.frame.size.width - spacing * 4)/3
         return CGSize(width: width, height: width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.section == collectionView.numberOfSections - 1 && indexPath.item == collectionView.numberOfItems(inSection: indexPath.section) - 1, let text = searchBar.text {// last item
+            flickerManager.requestImages(keyword: text, resetPage: false) { [weak self] (urls, error) in
+                guard let this = self else { return }
+                guard let urls = urls, nil == error else { return }
+                this.urls.append(contentsOf: urls)
+                this.collectionView.reloadData()
+            }
+        }
     }
     
     /*
