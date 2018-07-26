@@ -1,0 +1,6 @@
+framework module Pods_FLKLazyLoad {
+  umbrella header "Pods-FLKLazyLoad-umbrella.h"
+
+  export *
+  module * { export * }
+}

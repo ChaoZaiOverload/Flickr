@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D4377ABD47CA4416BA380FD /* Pods_FLKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33B952F597F00FC3A934847 /* Pods_FLKTests.framework */; };
+		592ABD218A25FFA546298C0F /* Pods_FLKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECDACB304934610B8D4C81F /* Pods_FLKUITests.framework */; };
+		8D188A9E66EFF67B03BF74A4 /* Pods_FLKLazyLoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADB89996FD3EF18BFD8EEA3 /* Pods_FLKLazyLoad.framework */; };
+		DF8B2DA34A47F5F27DBFE568 /* Pods_FLKLazyLoadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23E47AB2CBD75A0A3945D5 /* Pods_FLKLazyLoadUITests.framework */; };
+		E7CBAC1FE496538C832DC618 /* Pods_FLKLazyLoadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E4D8C710862889F290E5C2 /* Pods_FLKLazyLoadTests.framework */; };
+		EF4E17E020CAE9CC007C2F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E17DF20CAE9CC007C2F1A /* AppDelegate.swift */; };
+		EF4E17E220CAE9CC007C2F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E17E120CAE9CC007C2F1A /* ViewController.swift */; };
+		EF4E17E520CAE9CC007C2F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4E17E320CAE9CC007C2F1A /* Main.storyboard */; };
+		EF4E17E720CAE9CE007C2F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4E17E620CAE9CE007C2F1A /* Assets.xcassets */; };
+		EF4E17EA20CAE9CE007C2F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4E17E820CAE9CE007C2F1A /* LaunchScreen.storyboard */; };
+		EF4E17F520CAE9CE007C2F1A /* FLKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E17F420CAE9CE007C2F1A /* FLKTests.swift */; };
+		EF4E180020CAE9CE007C2F1A /* FLKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E17FF20CAE9CE007C2F1A /* FLKUITests.swift */; };
+		EF4E180F20CAEBFA007C2F1A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E180E20CAEBFA007C2F1A /* Photo.swift */; };
+		EF4E181220CAF19B007C2F1A /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E181120CAF19B007C2F1A /* PhotoCollectionViewCell.swift */; };
+		EF4E181420CAF580007C2F1A /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E181320CAF580007C2F1A /* SearchManager.swift */; };
+		EF4E181820CB2F96007C2F1A /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E181720CB2F96007C2F1A /* PhotoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF4E17F120CAE9CE007C2F1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF4E17D420CAE9CC007C2F1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF4E17DB20CAE9CC007C2F1A;
+			remoteInfo = FLK;
+		};
+		EF4E17FC20CAE9CE007C2F1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF4E17D420CAE9CC007C2F1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF4E17DB20CAE9CC007C2F1A;
+			remoteInfo = FLK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ADB89996FD3EF18BFD8EEA3 /* Pods_FLKLazyLoad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKLazyLoad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D2574ADC9386BEE966988C /* Pods-FLKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKTests/Pods-FLKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D23E47AB2CBD75A0A3945D5 /* Pods_FLKLazyLoadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKLazyLoadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D94386C4DADD40172741B9 /* Pods-FLKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKUITests/Pods-FLKUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6957FA18142C56C546573229 /* Pods-FLKLazyLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad.release.xcconfig"; sourceTree = "<group>"; };
+		96F3DC2BCFD16C039BC17760 /* Pods-FLKLazyLoadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoadTests/Pods-FLKLazyLoadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A33B952F597F00FC3A934847 /* Pods_FLKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2244C7273665841DD486DF /* Pods_FLK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3F63AABDB385BE10156931 /* Pods-FLKLazyLoadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoadUITests/Pods-FLKLazyLoadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2DB82935E9A33C6ECD79CC0 /* Pods-FLK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLK.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLK/Pods-FLK.release.xcconfig"; sourceTree = "<group>"; };
+		B48F15303C79C9F563F97182 /* Pods-FLKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKUITests/Pods-FLKUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB247D6AB47E2054A76F66D2 /* Pods-FLKLazyLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F72E9F670E1A811CC4321D /* Pods-FLKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKTests/Pods-FLKTests.release.xcconfig"; sourceTree = "<group>"; };
+		D10F2E765D4C81641A641D16 /* Pods-FLKLazyLoadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoadTests/Pods-FLKLazyLoadTests.release.xcconfig"; sourceTree = "<group>"; };
+		E5F38C705E6A1A50FE3FA7AC /* Pods-FLK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLK/Pods-FLK.debug.xcconfig"; sourceTree = "<group>"; };
+		ED14A637128D3524206DDFE9 /* Pods-FLKLazyLoadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoadUITests/Pods-FLKLazyLoadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF4E17DC20CAE9CC007C2F1A /* FLKLazyLoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLKLazyLoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4E17DF20CAE9CC007C2F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF4E17E120CAE9CC007C2F1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF4E17E420CAE9CC007C2F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF4E17E620CAE9CE007C2F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF4E17E920CAE9CE007C2F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF4E17EB20CAE9CE007C2F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4E17F020CAE9CE007C2F1A /* FLKLazyLoadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLKLazyLoadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4E17F420CAE9CE007C2F1A /* FLKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLKTests.swift; sourceTree = "<group>"; };
+		EF4E17F620CAE9CE007C2F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4E17FB20CAE9CE007C2F1A /* FLKLazyLoadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLKLazyLoadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4E17FF20CAE9CE007C2F1A /* FLKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLKUITests.swift; sourceTree = "<group>"; };
+		EF4E180120CAE9CE007C2F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4E180E20CAEBFA007C2F1A /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		EF4E181120CAF19B007C2F1A /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF4E181320CAF580007C2F1A /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		EF4E181720CB2F96007C2F1A /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		F8E4D8C710862889F290E5C2 /* Pods_FLKLazyLoadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKLazyLoadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECDACB304934610B8D4C81F /* Pods_FLKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF4E17D920CAE9CC007C2F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D188A9E66EFF67B03BF74A4 /* Pods_FLKLazyLoad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4E17ED20CAE9CE007C2F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4377ABD47CA4416BA380FD /* Pods_FLKTests.framework in Frameworks */,
+				E7CBAC1FE496538C832DC618 /* Pods_FLKLazyLoadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4E17F820CAE9CE007C2F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592ABD218A25FFA546298C0F /* Pods_FLKUITests.framework in Frameworks */,
+				DF8B2DA34A47F5F27DBFE568 /* Pods_FLKLazyLoadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33120C9A9B48D3F193CDDB3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5F38C705E6A1A50FE3FA7AC /* Pods-FLK.debug.xcconfig */,
+				B2DB82935E9A33C6ECD79CC0 /* Pods-FLK.release.xcconfig */,
+				28D2574ADC9386BEE966988C /* Pods-FLKTests.debug.xcconfig */,
+				D0F72E9F670E1A811CC4321D /* Pods-FLKTests.release.xcconfig */,
+				47D94386C4DADD40172741B9 /* Pods-FLKUITests.debug.xcconfig */,
+				B48F15303C79C9F563F97182 /* Pods-FLKUITests.release.xcconfig */,
+				CB247D6AB47E2054A76F66D2 /* Pods-FLKLazyLoad.debug.xcconfig */,
+				6957FA18142C56C546573229 /* Pods-FLKLazyLoad.release.xcconfig */,
+				96F3DC2BCFD16C039BC17760 /* Pods-FLKLazyLoadTests.debug.xcconfig */,
+				D10F2E765D4C81641A641D16 /* Pods-FLKLazyLoadTests.release.xcconfig */,
+				ED14A637128D3524206DDFE9 /* Pods-FLKLazyLoadUITests.debug.xcconfig */,
+				AA3F63AABDB385BE10156931 /* Pods-FLKLazyLoadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		365ABE96D434D68F9C55BCFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA2244C7273665841DD486DF /* Pods_FLK.framework */,
+				A33B952F597F00FC3A934847 /* Pods_FLKTests.framework */,
+				FECDACB304934610B8D4C81F /* Pods_FLKUITests.framework */,
+				0ADB89996FD3EF18BFD8EEA3 /* Pods_FLKLazyLoad.framework */,
+				F8E4D8C710862889F290E5C2 /* Pods_FLKLazyLoadTests.framework */,
+				3D23E47AB2CBD75A0A3945D5 /* Pods_FLKLazyLoadUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF4E17D320CAE9CC007C2F1A = {
+			isa = PBXGroup;
+			children = (
+				EF4E17DE20CAE9CC007C2F1A /* FLK */,
+				EF4E17F320CAE9CE007C2F1A /* FLKTests */,
+				EF4E17FE20CAE9CE007C2F1A /* FLKUITests */,
+				EF4E17DD20CAE9CC007C2F1A /* Products */,
+				33120C9A9B48D3F193CDDB3B /* Pods */,
+				365ABE96D434D68F9C55BCFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF4E17DD20CAE9CC007C2F1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E17DC20CAE9CC007C2F1A /* FLKLazyLoad.app */,
+				EF4E17F020CAE9CE007C2F1A /* FLKLazyLoadTests.xctest */,
+				EF4E17FB20CAE9CE007C2F1A /* FLKLazyLoadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF4E17DE20CAE9CC007C2F1A /* FLK */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E181020CAF17D007C2F1A /* Views */,
+				EF4E180D20CAEBED007C2F1A /* Models */,
+				EF4E17DF20CAE9CC007C2F1A /* AppDelegate.swift */,
+				EF4E17E120CAE9CC007C2F1A /* ViewController.swift */,
+				EF4E17E320CAE9CC007C2F1A /* Main.storyboard */,
+				EF4E17E620CAE9CE007C2F1A /* Assets.xcassets */,
+				EF4E17E820CAE9CE007C2F1A /* LaunchScreen.storyboard */,
+				EF4E17EB20CAE9CE007C2F1A /* Info.plist */,
+				EF4E181320CAF580007C2F1A /* SearchManager.swift */,
+				EF4E181720CB2F96007C2F1A /* PhotoViewController.swift */,
+			);
+			path = FLK;
+			sourceTree = "<group>";
+		};
+		EF4E17F320CAE9CE007C2F1A /* FLKTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E17F420CAE9CE007C2F1A /* FLKTests.swift */,
+				EF4E17F620CAE9CE007C2F1A /* Info.plist */,
+			);
+			path = FLKTests;
+			sourceTree = "<group>";
+		};
+		EF4E17FE20CAE9CE007C2F1A /* FLKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E17FF20CAE9CE007C2F1A /* FLKUITests.swift */,
+				EF4E180120CAE9CE007C2F1A /* Info.plist */,
+			);
+			path = FLKUITests;
+			sourceTree = "<group>";
+		};
+		EF4E180D20CAEBED007C2F1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E180E20CAEBFA007C2F1A /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF4E181020CAF17D007C2F1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E181120CAF19B007C2F1A /* PhotoCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF4E17DB20CAE9CC007C2F1A /* FLKLazyLoad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4E180420CAE9CE007C2F1A /* Build configuration list for PBXNativeTarget "FLKLazyLoad" */;
+			buildPhases = (
+				E328C177E582EAFC8BFA1EB2 /* [CP] Check Pods Manifest.lock */,
+				EF4E17D820CAE9CC007C2F1A /* Sources */,
+				EF4E17D920CAE9CC007C2F1A /* Frameworks */,
+				EF4E17DA20CAE9CC007C2F1A /* Resources */,
+				7987E7A2A6723691088A02A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLKLazyLoad;
+			productName = FLK;
+			productReference = EF4E17DC20CAE9CC007C2F1A /* FLKLazyLoad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF4E17EF20CAE9CE007C2F1A /* FLKLazyLoadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4E180720CAE9CE007C2F1A /* Build configuration list for PBXNativeTarget "FLKLazyLoadTests" */;
+			buildPhases = (
+				E1C18168B69875C61730AE54 /* [CP] Check Pods Manifest.lock */,
+				EF4E17EC20CAE9CE007C2F1A /* Sources */,
+				EF4E17ED20CAE9CE007C2F1A /* Frameworks */,
+				EF4E17EE20CAE9CE007C2F1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4E17F220CAE9CE007C2F1A /* PBXTargetDependency */,
+			);
+			name = FLKLazyLoadTests;
+			productName = FLKTests;
+			productReference = EF4E17F020CAE9CE007C2F1A /* FLKLazyLoadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF4E17FA20CAE9CE007C2F1A /* FLKLazyLoadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4E180A20CAE9CE007C2F1A /* Build configuration list for PBXNativeTarget "FLKLazyLoadUITests" */;
+			buildPhases = (
+				CADBD656A6A47BF96B12766E /* [CP] Check Pods Manifest.lock */,
+				EF4E17F720CAE9CE007C2F1A /* Sources */,
+				EF4E17F820CAE9CE007C2F1A /* Frameworks */,
+				EF4E17F920CAE9CE007C2F1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4E17FD20CAE9CE007C2F1A /* PBXTargetDependency */,
+			);
+			name = FLKLazyLoadUITests;
+			productName = FLKUITests;
+			productReference = EF4E17FB20CAE9CE007C2F1A /* FLKLazyLoadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF4E17D420CAE9CC007C2F1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Yu, Huiting";
+				TargetAttributes = {
+					EF4E17DB20CAE9CC007C2F1A = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					EF4E17EF20CAE9CE007C2F1A = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = EF4E17DB20CAE9CC007C2F1A;
+					};
+					EF4E17FA20CAE9CE007C2F1A = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = EF4E17DB20CAE9CC007C2F1A;
+					};
+				};
+			};
+			buildConfigurationList = EF4E17D720CAE9CC007C2F1A /* Build configuration list for PBXProject "FLKLazyLoad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF4E17D320CAE9CC007C2F1A;
+			productRefGroup = EF4E17DD20CAE9CC007C2F1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF4E17DB20CAE9CC007C2F1A /* FLKLazyLoad */,
+				EF4E17EF20CAE9CE007C2F1A /* FLKLazyLoadTests */,
+				EF4E17FA20CAE9CE007C2F1A /* FLKLazyLoadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF4E17DA20CAE9CC007C2F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4E17EA20CAE9CE007C2F1A /* LaunchScreen.storyboard in Resources */,
+				EF4E17E720CAE9CE007C2F1A /* Assets.xcassets in Resources */,
+				EF4E17E520CAE9CC007C2F1A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4E17EE20CAE9CE007C2F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4E17F920CAE9CE007C2F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7987E7A2A6723691088A02A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CADBD656A6A47BF96B12766E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLKLazyLoadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C18168B69875C61730AE54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLKLazyLoadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E328C177E582EAFC8BFA1EB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLKLazyLoad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF4E17D820CAE9CC007C2F1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4E180F20CAEBFA007C2F1A /* Photo.swift in Sources */,
+				EF4E181220CAF19B007C2F1A /* PhotoCollectionViewCell.swift in Sources */,
+				EF4E181420CAF580007C2F1A /* SearchManager.swift in Sources */,
+				EF4E17E220CAE9CC007C2F1A /* ViewController.swift in Sources */,
+				EF4E17E020CAE9CC007C2F1A /* AppDelegate.swift in Sources */,
+				EF4E181820CB2F96007C2F1A /* PhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4E17EC20CAE9CE007C2F1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4E17F520CAE9CE007C2F1A /* FLKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4E17F720CAE9CE007C2F1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4E180020CAE9CE007C2F1A /* FLKUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF4E17F220CAE9CE007C2F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF4E17DB20CAE9CC007C2F1A /* FLKLazyLoad */;
+			targetProxy = EF4E17F120CAE9CE007C2F1A /* PBXContainerItemProxy */;
+		};
+		EF4E17FD20CAE9CE007C2F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF4E17DB20CAE9CC007C2F1A /* FLKLazyLoad */;
+			targetProxy = EF4E17FC20CAE9CE007C2F1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF4E17E320CAE9CC007C2F1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4E17E420CAE9CC007C2F1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF4E17E820CAE9CE007C2F1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4E17E920CAE9CE007C2F1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF4E180220CAE9CE007C2F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF4E180320CAE9CE007C2F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF4E180520CAE9CE007C2F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB247D6AB47E2054A76F66D2 /* Pods-FLKLazyLoad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF4E180620CAE9CE007C2F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6957FA18142C56C546573229 /* Pods-FLKLazyLoad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF4E180820CAE9CE007C2F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F3DC2BCFD16C039BC17760 /* Pods-FLKLazyLoadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLKLazyLoad.app/FLKLazyLoad";
+			};
+			name = Debug;
+		};
+		EF4E180920CAE9CE007C2F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10F2E765D4C81641A641D16 /* Pods-FLKLazyLoadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLKLazyLoad.app/FLKLazyLoad";
+			};
+			name = Release;
+		};
+		EF4E180B20CAE9CE007C2F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED14A637128D3524206DDFE9 /* Pods-FLKLazyLoadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLK;
+			};
+			name = Debug;
+		};
+		EF4E180C20CAE9CE007C2F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA3F63AABDB385BE10156931 /* Pods-FLKLazyLoadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FLKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF4E17D720CAE9CC007C2F1A /* Build configuration list for PBXProject "FLKLazyLoad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4E180220CAE9CE007C2F1A /* Debug */,
+				EF4E180320CAE9CE007C2F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4E180420CAE9CE007C2F1A /* Build configuration list for PBXNativeTarget "FLKLazyLoad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4E180520CAE9CE007C2F1A /* Debug */,
+				EF4E180620CAE9CE007C2F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4E180720CAE9CE007C2F1A /* Build configuration list for PBXNativeTarget "FLKLazyLoadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4E180820CAE9CE007C2F1A /* Debug */,
+				EF4E180920CAE9CE007C2F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4E180A20CAE9CE007C2F1A /* Build configuration list for PBXNativeTarget "FLKLazyLoadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4E180B20CAE9CE007C2F1A /* Debug */,
+				EF4E180C20CAE9CE007C2F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF4E17D420CAE9CC007C2F1A /* Project object */;
+}

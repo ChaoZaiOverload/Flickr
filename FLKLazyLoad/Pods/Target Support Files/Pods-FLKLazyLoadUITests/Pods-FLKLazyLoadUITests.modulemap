@@ -1,0 +1,6 @@
+framework module Pods_FLKLazyLoadUITests {
+  umbrella header "Pods-FLKLazyLoadUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
