@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D4377ABD47CA4416BA380FD /* Pods_FLKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33B952F597F00FC3A934847 /* Pods_FLKTests.framework */; };
-		592ABD218A25FFA546298C0F /* Pods_FLKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECDACB304934610B8D4C81F /* Pods_FLKUITests.framework */; };
 		8D188A9E66EFF67B03BF74A4 /* Pods_FLKLazyLoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADB89996FD3EF18BFD8EEA3 /* Pods_FLKLazyLoad.framework */; };
 		DF8B2DA34A47F5F27DBFE568 /* Pods_FLKLazyLoadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23E47AB2CBD75A0A3945D5 /* Pods_FLKLazyLoadUITests.framework */; };
 		E7CBAC1FE496538C832DC618 /* Pods_FLKLazyLoadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E4D8C710862889F290E5C2 /* Pods_FLKLazyLoadTests.framework */; };
@@ -49,7 +47,6 @@
 		47D94386C4DADD40172741B9 /* Pods-FLKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKUITests/Pods-FLKUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6957FA18142C56C546573229 /* Pods-FLKLazyLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad.release.xcconfig"; sourceTree = "<group>"; };
 		96F3DC2BCFD16C039BC17760 /* Pods-FLKLazyLoadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoadTests/Pods-FLKLazyLoadTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A33B952F597F00FC3A934847 /* Pods_FLKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2244C7273665841DD486DF /* Pods_FLK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3F63AABDB385BE10156931 /* Pods-FLKLazyLoadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLKLazyLoadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLKLazyLoadUITests/Pods-FLKLazyLoadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2DB82935E9A33C6ECD79CC0 /* Pods-FLK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLK.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLK/Pods-FLK.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +74,6 @@
 		EF4E181320CAF580007C2F1A /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		EF4E181720CB2F96007C2F1A /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		F8E4D8C710862889F290E5C2 /* Pods_FLKLazyLoadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKLazyLoadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FECDACB304934610B8D4C81F /* Pods_FLKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLKUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4377ABD47CA4416BA380FD /* Pods_FLKTests.framework in Frameworks */,
 				E7CBAC1FE496538C832DC618 /* Pods_FLKLazyLoadTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592ABD218A25FFA546298C0F /* Pods_FLKUITests.framework in Frameworks */,
 				DF8B2DA34A47F5F27DBFE568 /* Pods_FLKLazyLoadUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,8 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				AA2244C7273665841DD486DF /* Pods_FLK.framework */,
-				A33B952F597F00FC3A934847 /* Pods_FLKTests.framework */,
-				FECDACB304934610B8D4C81F /* Pods_FLKUITests.framework */,
 				0ADB89996FD3EF18BFD8EEA3 /* Pods_FLKLazyLoad.framework */,
 				F8E4D8C710862889F290E5C2 /* Pods_FLKLazyLoadTests.framework */,
 				3D23E47AB2CBD75A0A3945D5 /* Pods_FLKLazyLoadUITests.framework */,
@@ -282,7 +274,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Yu, Huiting";
 				TargetAttributes = {
 					EF4E17DB20CAE9CC007C2F1A = {
@@ -351,17 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FLKLazyLoad/Pods-FLKLazyLoad-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CADBD656A6A47BF96B12766E /* [CP] Check Pods Manifest.lock */ = {
@@ -511,6 +502,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -536,12 +528,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -571,6 +564,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -590,11 +584,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

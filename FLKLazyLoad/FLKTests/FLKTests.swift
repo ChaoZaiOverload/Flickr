@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import FLK
+
 
 class FLKTests: XCTestCase {
     

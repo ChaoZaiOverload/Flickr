@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,6 +65,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YGz-yu-aLF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GAC-QV-7ay"/>
@@ -74,10 +73,9 @@
                             <constraint firstItem="DhC-ar-FDG" firstAttribute="top" secondItem="YGz-yu-aLF" secondAttribute="bottom" id="Ykw-il-J1e"/>
                             <constraint firstItem="DhC-ar-FDG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bug-Qg-Ulh"/>
                             <constraint firstItem="DhC-ar-FDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fBS-Qm-n67"/>
-                            <constraint firstItem="YGz-yu-aLF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vcd-lB-nwR"/>
+                            <constraint firstItem="YGz-yu-aLF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uvw-m6-TNV"/>
                             <constraint firstItem="DhC-ar-FDG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="x85-YQ-rxD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="DhC-ar-FDG" id="1dB-Te-LEO"/>
