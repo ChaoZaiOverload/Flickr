@@ -15,70 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VY5-GJ-Coq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dFo-d5-QIl"/>
-                                </connections>
-                            </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Je-Cg-5T5">
-                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OqJ-bi-4Mi">
-                                    <size key="itemSize" width="120" height="120"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCellReuseIdentifier" id="Ye6-ny-Owx" customClass="PhotoCollectionViewCell" customModule="FLKLazyLoad" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-ad-3PF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="pFS-ad-3PF" secondAttribute="trailing" id="3Xk-0s-hmf"/>
-                                            <constraint firstItem="pFS-ad-3PF" firstAttribute="leading" secondItem="Ye6-ny-Owx" secondAttribute="leading" id="Omd-aV-WOM"/>
-                                            <constraint firstAttribute="bottom" secondItem="pFS-ad-3PF" secondAttribute="bottom" id="XoM-Mt-Sm9"/>
-                                            <constraint firstItem="pFS-ad-3PF" firstAttribute="top" secondItem="Ye6-ny-Owx" secondAttribute="top" id="gZ3-2P-jq2"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="imageView" destination="pFS-ad-3PF" id="aqN-rH-8NM"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="frP-3y-RF7"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LVd-qW-Udm"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="VY5-GJ-Coq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3zg-Eg-hh4"/>
-                            <constraint firstItem="7Je-Cg-5T5" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="D1G-Oe-iJK"/>
-                            <constraint firstItem="VY5-GJ-Coq" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="JRN-xo-eun"/>
-                            <constraint firstItem="7Je-Cg-5T5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jca-rH-7FG"/>
-                            <constraint firstItem="7Je-Cg-5T5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QpF-FU-c4n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="VY5-GJ-Coq" secondAttribute="top" id="kaZ-W0-2PU"/>
-                            <constraint firstItem="7Je-Cg-5T5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nNF-cI-1YQ"/>
-                            <constraint firstItem="7Je-Cg-5T5" firstAttribute="top" secondItem="VY5-GJ-Coq" secondAttribute="bottom" id="v3f-Fw-7wN"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="collectionView" destination="7Je-Cg-5T5" id="2Zd-gU-5hp"/>
-                        <outlet property="searchBar" destination="VY5-GJ-Coq" id="mqK-Zw-N5N"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,19 +7,43 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
   
-  @IBOutlet private weak var collectionView: UICollectionView!
-  @IBOutlet private weak var searchBar: UISearchBar!
+  private lazy var collectionView: UICollectionView = {
+    let layout = UICollectionViewFlowLayout()
+    layout.itemSize = CGSize(width: 100, height: 100)
+    let v = UICollectionView(frame: .zero, collectionViewLayout: layout)
+    return v
+  }()
+  private lazy var searchBar = {
+    UISearchBar()
+  }()
   
-  private let searchManager = SearchManager()
+  private lazy var searchManager = SearchManager()
   
   private var photos = [Photo]()
   private var selectedPhoto: Photo?
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.addSubview(collectionView)
+    view.addSubview(searchBar)
+    searchBar.snp.makeConstraints { (maker) in
+      maker.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+      maker.left.right.equalToSuperview()
+      maker.height.equalTo(44)
+    }
+    searchBar.delegate = self
+    
+    collectionView.snp.makeConstraints { (make) in
+      make.top.equalTo(searchBar.snp.bottom)
+      make.left.right.bottom.equalToSuperview()
+    }
+    collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier: PhotoCollectionViewCell.reuseIdentifier)
+    collectionView.delegate = self
+    collectionView.dataSource = self
   }
   
   override func didReceiveMemoryWarning() {
@@ -69,12 +93,11 @@ extension ViewController: UICollectionViewDataSource {
   }
   
   public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.reuseIdentifier, for: indexPath) as? PhotoCollectionViewCell else {
-      return UICollectionViewCell()
-    }
+    let photoCell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.reuseIdentifier, for: indexPath) as? PhotoCollectionViewCell ?? PhotoCollectionViewCell(frame: .zero)
+    
     let shouldLoad = !collectionView.isDragging && !collectionView.isTracking
-    cell.configure(url: photos[indexPath.item].url, shouldLoad: shouldLoad)
-    return cell
+    photoCell.configure(url: photos[indexPath.item].url, shouldLoad: shouldLoad)
+    return photoCell
   }
   
   public func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -279,13 +279,16 @@
 				TargetAttributes = {
 					EF4E17DB20CAE9CC007C2F1A = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1240;
 					};
 					EF4E17EF20CAE9CE007C2F1A = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = EF4E17DB20CAE9CC007C2F1A;
 					};
 					EF4E17FA20CAE9CE007C2F1A = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = EF4E17DB20CAE9CC007C2F1A;
 					};
 				};
@@ -607,7 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -625,7 +628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -645,7 +648,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLKLazyLoad.app/FLKLazyLoad";
 			};
@@ -666,7 +669,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLKLazyLoad.app/FLKLazyLoad";
 			};
@@ -686,7 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FLK;
 			};
@@ -706,7 +709,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyu.FLKUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FLK;
 			};
